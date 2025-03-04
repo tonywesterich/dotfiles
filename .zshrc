@@ -72,6 +72,8 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
 
+HISTFILE="/commandhistory/.zsh_history"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
