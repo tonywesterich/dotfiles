@@ -72,7 +72,10 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
 
-HISTFILE="/commandhistory/.zsh_history"
+# Redefines where history is written and from where it is read.
+# Set HISTFILE before loading oh-my-zsh. (`source $ZSH/oh-my-zsh.sh`)
+# The original value is HISTFILE=~/.zsh_history
+HISTFILE="/command_history/.zsh_history"
 
 source $ZSH/oh-my-zsh.sh
 
